@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serin</title>
+</head>
+<body>
+  <h1>Hai Serin NHH.</h1>
+  <img src="love.gif" alt="Love">
+  <h2>Kamu sayang ga sama aku? 🥺</h2>
+  <button id="btn_y" onclick="alert('LOVE YOU TOO ❤❤❤')">BANGET</button>
+  <button id="btn_n" onclick="gamau(this)" style="position: absolute; margin-left: 10px;">enggak</button>
+  <script>
+    function gamau(id) {
+      let mau = document.getElementById('btn_y');
+      let i = Math.floor(Math.random() * 300) + 1;
+      let j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + 'px';
+      id.style.top = j + 'px';
+    }
+  </script>
+</body>
+</html>
